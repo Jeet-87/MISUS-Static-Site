@@ -56,7 +56,6 @@ body{
 
 .nav ul li a {
     margin: 0rem ;
-    
     padding: 2rem;
     text-decoration: none;
     color: aliceblue;
@@ -149,6 +148,9 @@ body{
 }
 
 .home .cta a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     border: 0px solid ;
     padding: 1em 2em 1em 2em;
@@ -177,6 +179,13 @@ body{
     transform: translateY(2px);
     border: #bbd0ff;
     box-shadow: 2px 2px 5px #bbd0ff;
+}
+
+.home .cta a img {
+    margin: 0 0 0 0.8rem ;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 100px;
 }
 
 
@@ -307,3 +316,68 @@ body{
     transition: 10ms;
 }
 
+.clients {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.500);
+    text-align: center;
+    overflow: hidden;
+}
+
+.clients h1 {
+    padding: 4rem;
+    font-size: 4rem;
+    color: rgb(25 38 54);
+}
+
+.client-cards .card-wrapper {
+    background-color: rgb(25 38 54);
+    padding: 4rem 0 4rem 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: 50%;
+    width: 350vw;
+}
+
+.client-cards .card-wrapper a {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid gray;
+    border-radius: 10px;
+    height: 250px;
+    width: 250px;
+    cursor: pointer;
+    background-color: #bbd0ff;
+    overflow: hidden;
+    padding: 2rem;
+    margin: 0 1rem 0 1rem;
+
+    animation: logo-infinite 25s linear infinite ;
+}
+
+@keyframes logo-infinite {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translate(-800%);
+    }
+
+    /* 100% {
+        transform: translateX(0%);
+    } */
+}
+
+.client-cards img {
+    width: 100%;
+    height: 100%;
+    margin: 2rem;
+    background: repeat-x 0 / 100% auto;
+}
