@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
 </head>
 <body>
 
@@ -17,11 +16,11 @@
 
     <div class="nav" id="navbar">
         <ul id="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#aboutUs">About Us</a></li>
-            <li><a href="#products">Products</a></li>
-            <li><a href="#">Clients</a></li>
-            <li><a href="#">Contact Us</a></li>         
+            <li><a href="#"><i class="fa-sharp fa-solid fa-house"></i> Home</a></li>
+            <li><a href="#aboutUs"><i class="fa-regular fa-address-card"></i> About Us</a></li>
+            <li><a href="#products"><i class="fa-brands fa-product-hunt"></i> Products</a></li>
+            <li><a href="#clients"><i class="fa-solid fa-handshake"></i> Clients</a></li>
+            <li><a href="#contactUs"><i class="fa-sharp fa-solid fa-address-book"></i> Contact Us</a></li>         
         </ul>
     </div>
 
@@ -60,7 +59,8 @@
     <div class="products">
 
             <a href="#" class="card">
-                <h4>MUDGUN MASS</h4>
+                <h4>MUDGUN</h4>
+                 <h4> MASS</h4>
                 <img src="/src/mudgun.png" alt="">
                 <section>description of products</section>
             </a>
@@ -77,19 +77,20 @@
                 <section>description of products</section>
             </a>
             <a href="#" class="card">
-                <h4>Product</h4>
-                <img src="" alt="">
+                <h4>NOZZLE FILLING </h4>
+                   <h4>  COMPOUND</h4>
+                <img src="/src/nfc.jpg" alt="">
                 <section>description of products</section>
             </a>
             <a href="#" class="card">
-                <h4>Product</h4>
-                <img src="" alt="">
+                <h4>CASTABLE</h4> <h4>POWDERS</h4>
+                <img src="/src/castables.jpg" alt="">
                 <section>description of products</section>
             </a>
         
     </div>
 
-    <div class="clients">
+    <div class="clients" id="clients">
         <h1>OUR CLIENTS</h1>
         <div class="client-cards">
             <div class="card-wrapper">
@@ -114,9 +115,28 @@
                 <a href="#"><img src="/src/jaibalaji.png" alt=""></a>
                 <a href="#"><img src="/src/neo.png" alt=""></a>
                 <a href="#"><img src="/src/rml.png" alt=""></a>
+
             </div>
         </div>
     </div>
+
+    <div class="contact-us" id="contactUs">
+        <h1>CONTACT US</h1>
+        <div class="input-form">
+            <input type="email" placeholder="Email ID">
+            <input type="text" placeholder="Subject">
+            <textarea name="message" id="" cols="30" rows="10" placeholder="Message"></textarea>
+            <a href="#">SEND</a>
+            <p>Office/Works : Hat Asuria More, PO-U- Jambedia, West Bengal 722202</p>
+            <p>Contact: 956542148654</p>
+        </div>
+    </div>
+    
+    <footer>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+    </footer>
 
     <!-- <script src="/index.js"></script> -->
 </body>
